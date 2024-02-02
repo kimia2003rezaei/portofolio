@@ -1,0 +1,64 @@
+.name-title {
+    font-size: 6rem;
+    letter-spacing: 0.2em;
+}
+.name-subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+}
+.navbar {
+    font-size: 1.5rem;
+    color: black;
+}
+.logo {
+    font-size: 170%;
+}
+.align-top {
+    margin-top: 10px;
+}
+.home-img {
+    max-width: 100%;
+    height: auto;
+}
+.mobile-home-img {
+    display: none;
+}
+#top-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+    align-items: center;
+    margin-bottom: 5%;
+}
+.portofolio {
+    padding: 10% 20% 10% 20%;
+    text-align: center;
+}
+.portofolio-item-title {
+    font-size: 1.7rem;
+}
+@media (max-width: 1000px) {
+    .home-img {
+        display: none;
+    }
+    .mobile-home-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+footer {
+    height: 5%;
+}
+.icon {
+    border-radius: 50%;
+}
