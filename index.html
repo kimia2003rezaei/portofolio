@@ -14,9 +14,9 @@
 <body>
 
 <!--navigation bar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="">
-        <img src="letter-k.png" class="d-inline-block align-top logo-img" alt="">
+        <img src="https://i.imgur.com/NksexN9.png" class="d-inline-block align-top logo-img" alt="">
         <span class="logo">imia Rezaei</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                 <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#footer">Contact</a>
@@ -42,83 +42,82 @@
 <!--navigation bar-->
 
 <!--home-->
-<div id="home">
-    <img src="home.jpg" class="home-img" alt="">
-    <img src="mobile_home.jpg" class="mobile-home-img" alt="">
-    <div class="home-title">
-        <h1 class="name-title">Kimia Rezaei</h1>
-        <h3 class="name-subtitle">A web developer</h3>
+<section id="welcome-section">
+    <div id="home">
+        <div class="home-title">
+            <h1 class="name-title">Kimia<br>Rezaei</h1>
+            <h3 class="name-subtitle">A web developer</h3>
+        </div>
     </div>
-</div>
+</section>
 <!--home-->
 
 <!--about-->
-<div class="about" id="about">
+<section class="about" id="about">
     <div class="about-text-box">
-        <h2>Hi there!</h2>
+        <h2 id="about-title">Hi there!</h2>
         <p>I'm just a nursing student who has suddenly realised their passion for web development!</p>
     </div>
     <div class="about-img-box">
-        <img src="about.jpg" class="about-img">
+        <img src="https://i.imgur.com/rf7rwXL.jpeg" class="about-img">
     </div>
-</div>
+</section>
 <!--about-->
 
-<!--education-->
-<div class="education" id="education">
-    <div id="accordion">
+<!--projects-->
+<section id="projects">
+    <div class="card-deck">
         <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="card-button-title">Bachelor of Nursing Degree</span>
-                    </button>
-                </h2>
-            </div>
-
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="card-description">
-                        <h3 class="card-body-title">since 09/2021</h3>
-                        <h5 class="card-body-subtitle">Medical Azad University of Tehran</h5>
-                        Current semester: 5<br>
-                        Current average score: 16.69
-                    </div>
-                    <div class="card-image">
-                        <img src="uni.jpg" class="education-image" alt="">
-                    </div>
-                </div>
+            <a target="_blank" href="https://kimia2003rezaei.github.io/documentationPage/">
+                <img class="card-img-top" src="documentation_page.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="card-body">
+                <div class="card-text">documentation page</div>
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <span class="card-button-title">Experimental Sciences High School</span>
-                    </button>
-                </h2>
+            <a target="_blank" href="https://kimia2003rezaei.github.io/TinDog/">
+                <img class="card-img-top" src="tindog.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="card-body">
+                <div class="card-text">TinDog</div>
             </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="card-image second-card-image">
-                        <img src="highschool.jpg" class="education-image" alt="">
-                    </div>
-                    <div class="card-description second-card-description">
-                    <h3 class="card-body-title">From 09/2018 to 06/2021</h3>
-                    <h5 class="card-body-subtitle">Etraat High School, Tehran</h5>
-                    GPA: 19.26
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <a target="_blank" href="https://kimia2003rezaei.github.io/Bootstrap-Survey/">
+                <img class="card-img-top" src="survey.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="card-body">
+                <div class="card-text">Bootstrap Survey</div>
             </div>
         </div>
     </div>
-</div>
-<!--education-->
+
+    <div class="card-deck two">
+        <div class="card">
+            <a target="_blank" href="https://kimia2003rezaei.github.io/Nietzsche-Tribute/">
+                <img class="card-img-top" src="nietzsche_tribute.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="card-body">
+                <div class="card-text">Nietzsche tribute page</div>
+            </div>
+        </div>
+        <div class="card">
+            <a target="_blank" href="https://kimia2003rezaei.github.io/Pixel-Bakery/">
+                <img class="card-img-top" src="pixel_bakery.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="card-body">
+                <div class="card-text">Pixel Bakery</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--projects-->
 
 <!--footer-->
 <div class="footer" id="footer">
     <footer class="bg-body-tertiary text-center">
-    Interested? say Hi:
+    Interested? Say hi or check out my gitHub profile!
         <!-- Copyright -->
         <div class="text-center p-3 footer-box" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Kimia Rezaei
@@ -140,6 +139,8 @@
                         style="background-color: #333333;"
                         href="https://github.com/kimia2003rezaei"
                         role="button"
+                        id="profile-link"
+                        target="_blank"
                 >
                     <i class="fab fa-github"></i>
                 </a>
