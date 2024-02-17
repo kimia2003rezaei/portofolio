@@ -37,7 +37,7 @@
 
 /*about*/
 .about {
-    padding: 10% 0 10% 0;
+    padding: 15% 0 10% 0;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     align-items: center;
@@ -58,25 +58,43 @@
 
 /*projects*/
 #projects {
-    padding: 13% 10% 0 10%;
-    background-color: #343A40;
+    padding: 5% 15%;
+    margin: 10% 0;
 }
-.card a{
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 3%;
     text-align: center;
 }
-#projects img {
-    width: 50%;
+.project-img {
+    width: 100%;
     height: auto;
+    border-radius: 5px;
 }
-#projects .card-body {
-    display: block;
+.project-img:hover {
+    scale: 1.2;
+    cursor: pointer;
 }
-.card-deck.two {
-    padding: 10% 17%;
+.tindog {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: end;
 }
-.card-text {
-    font-weight: 400;
-    font-size: 1.4rem;
+.documentation {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+}
+.bakery {
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+}
+.nietzsche {
+    grid-column: 3;
+    grid-row: 3;
 }
 /*projects*/
 
@@ -85,6 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .footer {
     padding-top: 5%;
@@ -126,13 +145,38 @@
         font-size: 1.2rem;
     }
     /*about*/
-
-    #projects img {
-        width: 80%;
-        height: auto;
+    /*projects*/
+    #projects {
+        padding-bottom: 15%;
     }
-    .card-deck.two {
-        padding: 0;
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+    }
+    .project-img:hover {
+        scale: 0.8;
+    }
+    .tindog {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        align-self: center;
+    }
+    .documentation {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+    }
+    .bakery {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+    }
+    .nietzsche {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    .projects-text {
+        grid-column: 1 / span 2;
     }
 
     .social-media {
@@ -154,9 +198,18 @@
         margin-top: 10px;
     }
 
+    /*home*/
     #welcome-section {
     background-image: url("mobile_home.jpg");
     }
+    .name-title {
+        font-size: 8rem;
+    }
+    .name-subtitle {
+        font-size: 3rem;
+    }
+
+    /*about*/
     .about {
         grid-template-columns: 1fr 2fr 2fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -176,12 +229,41 @@
     #about-title {
         font-size: 5rem;
     }
-    .name-title {
-        font-size: 8rem;
+
+    /*projects*/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
     }
-    .name-subtitle {
-        font-size: 3rem;
+    .project-img:hover {
+        scale: 0.8;
     }
+    .tindog {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        align-self: center;
+    }
+    .documentation {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+    }
+    .bakery {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+    }
+    .nietzsche {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    .projects-text {
+        grid-column: 1 / span 2;
+    }
+    .projects-title {
+        font-size: 5rem;
+    }
+    /*footer*/
     .social-media {
         display: flex;
     }
